@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -29,6 +32,16 @@ class DefaultFirebaseOptions {
           'DefaultFirebaseOptions have not been configured for macos - '
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
+      case TargetPlatform.windows:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -36,31 +49,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDFpaHn58NWiR90pPWJsEAOPhd-2oiha2Y',
-    appId: '1:1086627119682:web:85235bbffc017f0d76a3db',
-    messagingSenderId: '1086627119682',
-    projectId: 'packages-demo-119b7',
-    authDomain: 'packages-demo-119b7.firebaseapp.com',
-    storageBucket: 'packages-demo-119b7.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBP2BlxWwlm0GI4PZHZRl-NAf6fiG1IhJY',
-    appId: '1:1086627119682:android:3aecab4a98fe263176a3db',
-    messagingSenderId: '1086627119682',
-    projectId: 'packages-demo-119b7',
-    storageBucket: 'packages-demo-119b7.appspot.com',
+    apiKey: 'AIzaSyAvTJ4J1weMy7onazJhWZyl9gPydyWHij0',
+    appId: '1:804169122721:android:4a0524894b2929a4aac1e0',
+    messagingSenderId: '804169122721',
+    projectId: 'whatsapp-clone-sonu',
+    storageBucket: 'whatsapp-clone-sonu.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB4sl8UO3b0YzZG-x_gbim52EpKzl1aVoU',
-    appId: '1:1086627119682:ios:c6b466bf06bbdce976a3db',
-    messagingSenderId: '1086627119682',
-    projectId: 'packages-demo-119b7',
-    storageBucket: 'packages-demo-119b7.appspot.com',
-    androidClientId: '1086627119682-3a0smf3p0pcaf60pl2vd88da7afb5bq1.apps.googleusercontent.com',
-    iosClientId: '1086627119682-cpa5vejcfs9voe3bp0ltf9kdstkc375u.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAiZWdY1qIs7kRT5wSGCMByWPfXGbbiGlM',
+    appId: '1:804169122721:ios:549557090dc0dac8aac1e0',
+    messagingSenderId: '804169122721',
+    projectId: 'whatsapp-clone-sonu',
+    storageBucket: 'whatsapp-clone-sonu.appspot.com',
     iosBundleId: 'com.example.phoneAuthHandlerDemo',
   );
 }

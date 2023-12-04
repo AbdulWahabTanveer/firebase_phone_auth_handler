@@ -47,7 +47,7 @@ class _AuthenticationScreenState extends State<AuthenticationScreen> {
                     textAlignVertical: TextAlignVertical.center,
                     style: const TextStyle(fontSize: 25),
                     onChanged: (phone) => phoneNumber = phone.completeNumber,
-                    initialCountryCode: 'IN',
+                    initialCountryCode: 'PK',
                     flagsButtonPadding: const EdgeInsets.only(right: 10),
                     showDropdownIcon: false,
                     keyboardType: TextInputType.phone,

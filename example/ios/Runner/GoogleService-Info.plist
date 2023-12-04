@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>309323347097-q1pjfsu2r7hb177qck55rq77blesb0tt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.309323347097-q1pjfsu2r7hb177qck55rq77blesb0tt</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>309323347097-igec8et8ol1oq4gbtep2cv8b4dqevbaf.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCtxUH9YBee3dftWn3t6Fr8j-soZoR_IiQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>309323347097</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.phoneAuthHandlerDemo</string>
+	<key>PROJECT_ID</key>
+	<string>wahab-testing-firebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wahab-testing-firebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:309323347097:ios:3ac22638062f2a005b3408</string>
+	<key>DATABASE_URL</key>
+	<string>https://wahab-testing-firebase-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
